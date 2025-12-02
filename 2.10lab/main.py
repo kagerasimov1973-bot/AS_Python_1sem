@@ -4,7 +4,6 @@ class HeightError(Exception): pass
 class WeightError(Exception): pass
 class TemperatureError(Exception): pass
 
-# а) Рост
 try:
     height = float(input("Введите рост (см): "))
     if not 0 <= height <= 300:
@@ -13,7 +12,6 @@ try:
 except HeightError as e:
     print(e)
 
-# б) Вес
 try:
     weight = float(input("Введите вес (кг): "))
     if not 0 <= weight <= 500:
@@ -22,7 +20,6 @@ try:
 except WeightError as e:
     print(e)
 
-# в) Температура
 try:
     temp = float(input("Введите температуру (°C): "))
     if temp < -273.15:
